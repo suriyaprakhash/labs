@@ -19,7 +19,6 @@ usermod -aG sudo suriya
 su - suriya
 ```
 
-
 # Phase 1: Resource Optimization (Swap)
 Debian handles swap similarly, but it is critical for 512MB RAM instances to avoid "Out of Memory" (OOM) errors during apt upgrades or Certbot runs.
 
@@ -66,6 +65,12 @@ net.ipv6.conf.all.forwarding=1
 sudo sysctl -p
 ```
 
+Update the firewall to allow
+```
+Protocol - UDP
+Port - 41641	
+Desc - For tailscale - punching a hole
+```
 
 # Phase 3: Web Server & Monitoring setup
 Debian's package names are slightly different for GoAccess dependencies.
