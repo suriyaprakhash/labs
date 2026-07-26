@@ -65,7 +65,7 @@ net.ipv6.conf.all.forwarding=1
 sudo sysctl -p
 ```
 
-Update the firewall to allow
+Check see if you are able to use node - update the firewall to allow
 ```
 Protocol - UDP
 Port - 41641	
