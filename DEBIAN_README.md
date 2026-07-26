@@ -12,10 +12,13 @@ adduser suriya
 2. Install Sudo (Debian doesn't always include it)
 apt update && apt install sudo
 
-3. Add your user to the Sudo group
+3. Check the existing sudo-ers
+getent group sudo
+
+4. Add your user to the Sudo group
 usermod -aG sudo suriya
 
-4. Switch to your new user
+5. Switch to your new user
 su - suriya
 ```
 
