@@ -1,4 +1,4 @@
-Check the steps in [Debian Readme](../DEBIAN_README.md) to create **swap space** and for **tailscale exit node**
+Check the steps in [Debian Readme](../DEBIAN_README.md) to create **sudo user**, **swap space** and for **tailscale exit node**
 
 ## Installing Docker on Debian 13 (Trixie)
 
