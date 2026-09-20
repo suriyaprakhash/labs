@@ -20,7 +20,11 @@ usermod -aG sudo suriya
 
 5. Switch to your new user
 su - suriya
+
+6. Id username and display info
+id suriya
 ```
+
 
 # Phase 1: Resource Optimization (Swap)
 Debian handles swap similarly, but it is critical for 512MB RAM instances to avoid "Out of Memory" (OOM) errors during apt upgrades or Certbot runs.
