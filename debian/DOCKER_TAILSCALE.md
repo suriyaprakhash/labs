@@ -42,3 +42,26 @@ networks:
 ```
 
 **NOTE** It needs two tailscale containers, cause single tailscale container does not work between **exposing nas magic dns within npm** and **using it as exit node**
+
+
+## Check & Force Host IP Forwarding:VPS Terminal
+
+If kernel packet forwarding got reset, the VPS drops all exit node traffic before it can reach the WAN interface.
+
+Run on your VPS terminal,
+```
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo sysctl -w net.ipv6.conf.all.forwarding=1
+```
+
+To make it persistent across reboots,
+```
+echo "net.ipv4.ip_forward=1" | sudo tee -a /etc/sysctl.d/99-tailscale.conf
+echo "net.ipv6.conf.all.forwarding=1" | sudo tee -a /etc/sysctl.d/99-tailscale.conf
+sudo sysctl --system
+```
+Verification: Run,
+```
+sudo sysctl net.ipv4.ip_forward
+```
+It must return 1.
