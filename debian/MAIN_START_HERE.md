@@ -6,6 +6,8 @@ Start in the following order,
 - [Docker debian installation](./INSTALL_DOCKER.md)
 - [VPS Network brdige](./DOCKER_VPS_NW_BRIDGE.md)
 - [Dockhand](./DOCKER_DOCKHAND.md)
+- [Nginx Proxy Mangaer](./DOCKER_NPM.md)
+- [Tailscale](./DOCKER_TAILSCALE.md)
 
 Destroy whole docker,
 - [Uninstall docker](./NUKE_DOCKER.md) 
