@@ -22,17 +22,17 @@
         }
 
         [data-theme="dark"] {
-            --bg-color: #17120d;
-            --surface: #241b12;
-            --text-main: #fff3ad;
-            --text-muted: #d7c982;
-            --accent: #ff8a28;
-            --yellow: #ffd21f;
-            --orange: #ff6b1a;
-            --border: #ffd21f;
-            --mountain-far: #35444a;
-            --mountain-near: #29383a;
-            --forest: #1e2b2b;
+            --bg-color: #100d20;
+            --surface: #211936;
+            --text-main: #e7f0ff;
+            --text-muted: #afc4e8;
+            --accent: #83d9ff;
+            --yellow: #90d9ff;
+            --orange: #b39bff;
+            --border: #806bb8;
+            --mountain-far: #302b52;
+            --mountain-near: #211d3b;
+            --forest: #151328;
         }
 
         body {
@@ -61,8 +61,8 @@
         }
 
         [data-theme="dark"] body::after {
-            opacity: 0.3;
-            background: radial-gradient(ellipse at 78% 12%, rgba(255, 243, 173, 0.25) 0%, transparent 32%), radial-gradient(ellipse at 18% 76%, rgba(255, 210, 31, 0.12) 0%, transparent 30%), radial-gradient(ellipse at 86% 84%, rgba(242, 107, 33, 0.08) 0%, transparent 28%);
+            opacity: 0.26;
+            background: radial-gradient(ellipse at 78% 12%, rgba(183, 160, 255, 0.2) 0%, transparent 32%), radial-gradient(ellipse at 18% 76%, rgba(114, 81, 189, 0.14) 0%, transparent 30%), radial-gradient(ellipse at 86% 84%, rgba(73, 51, 143, 0.12) 0%, transparent 28%);
         }
 
         .stars {
@@ -71,11 +71,39 @@
             z-index: 0;
             pointer-events: none;
             opacity: 0;
-            background-image: radial-gradient(1px 1px at 8% 18%, #fffbe0 99%, transparent), radial-gradient(1.5px 1.5px at 19% 42%, #fffbe0 99%, transparent), radial-gradient(1px 1px at 31% 11%, #fffbe0 99%, transparent), radial-gradient(1.5px 1.5px at 43% 32%, #fffbe0 99%, transparent), radial-gradient(1px 1px at 57% 15%, #fffbe0 99%, transparent), radial-gradient(1px 1px at 68% 39%, #fffbe0 99%, transparent), radial-gradient(1.5px 1.5px at 79% 22%, #fffbe0 99%, transparent), radial-gradient(1px 1px at 91% 47%, #fffbe0 99%, transparent), radial-gradient(1px 1px at 13% 71%, #fffbe0 99%, transparent), radial-gradient(1.5px 1.5px at 38% 83%, #fffbe0 99%, transparent), radial-gradient(1px 1px at 62% 68%, #fffbe0 99%, transparent), radial-gradient(1px 1px at 87% 88%, #fffbe0 99%, transparent);
+            background-image:
+                radial-gradient(1px 1px at 4% 8%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 8% 18%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 14% 31%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 19% 42%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 24% 12%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 29% 57%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 31% 11%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 36% 25%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 43% 32%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 48% 7%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 52% 49%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 57% 15%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 62% 68%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 68% 39%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 73% 9%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 79% 22%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 83% 58%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 87% 88%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 91% 47%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 96% 17%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 13% 71%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 22% 91%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 38% 83%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 47% 74%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 56% 92%, #e4f3ff 99%, transparent),
+                radial-gradient(1.5px 1.5px at 71% 81%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 78% 96%, #e4f3ff 99%, transparent),
+                radial-gradient(1px 1px at 94% 72%, #e4f3ff 99%, transparent);
         }
 
         [data-theme="dark"] .stars {
-            opacity: 0.72;
+            opacity: 0.9;
         }
 
         .drizzle {
@@ -263,8 +291,8 @@
         }
 
         [data-theme="dark"] .sun {
-            background: #fff3ad;
-            box-shadow: 0 0 35px rgba(255, 243, 173, 0.72), 0 0 110px rgba(255, 210, 31, 0.34);
+            background: #eee9ff;
+            box-shadow: 0 0 35px rgba(238, 233, 255, 0.72), 0 0 110px rgba(114, 81, 189, 0.38);
         }
 
         [data-theme="dark"] .sun::before {
@@ -343,14 +371,14 @@
         }
 
         [data-theme="dark"] .cloud {
-            background: linear-gradient(180deg, #fff3ad 0%, #d5c78f 52%, #a99b70 100%);
-            opacity: 0.1;
+            background: linear-gradient(180deg, #d9d0ff 0%, #a99ad8 52%, #75669f 100%);
+            opacity: 0.12;
             filter: blur(8px);
         }
 
         [data-theme="dark"] .cloud::before,
         [data-theme="dark"] .cloud::after {
-            background: linear-gradient(180deg, #fff3ad 0%, #d5c78f 52%, #a99b70 100%);
+            background: linear-gradient(180deg, #d9d0ff 0%, #a99ad8 52%, #75669f 100%);
         }
 
         @keyframes cloud-float {
@@ -381,11 +409,11 @@
         }
 
         [data-theme="dark"] header {
-            background: rgba(23, 18, 13, 0.92);
+            background: rgba(27, 19, 54, 0.58);
         }
 
         [data-theme="dark"] body {
-            background-image: none;
+            background-image: linear-gradient(180deg, #416b9f 0%, #312064 30%, #17102f 66%, #080711 100%);
         }
 
         [data-theme="dark"] .birds {
@@ -517,15 +545,6 @@
         .reveal-ready .lab-card.is-visible {
             opacity: 1;
             transform: translateY(0) rotate(var(--card-tilt, 0deg));
-        }
-
-        .lab-card::after {
-            content: '\2197';
-            position: absolute;
-            top: 20px;
-            right: 22px;
-            color: var(--accent);
-            font-size: 1.3rem;
         }
 
         .card-category {
@@ -718,9 +737,13 @@
         footer {
             padding: 45px 10% 40px;
             font-size: 0.8rem;
-            color: var(--text-muted);
+            color: #fffbe0;
             text-align: center;
             letter-spacing: 1px;
+        }
+
+        [data-theme="dark"] footer {
+            color: var(--text-muted);
         }
 
         @media (max-width: 768px) {
