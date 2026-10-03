@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labs | Suriya Prakhash</title>
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/suriyaprakhash/suriyaprakhash.github.io/master/assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         :root {
             --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -735,11 +736,35 @@
         }
 
         footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
             padding: 45px 10% 40px;
             font-size: 0.8rem;
             color: #fffbe0;
-            text-align: center;
             letter-spacing: 1px;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .social-links a {
+            color: inherit;
+            font-size: 1.15rem;
+            transition: color 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--yellow);
+        }
+
+        .copyright {
+            margin: 0;
+            text-align: right;
         }
 
         [data-theme="dark"] footer {
@@ -756,6 +781,8 @@
             .section-heading { display: block; }
             .section-note { display: block; margin-top: 5px; }
             .theme-switcher { margin-top: 0; }
+            footer { flex-direction: column; align-items: flex-end; }
+            .social-links { align-self: flex-start; }
         }
     </style>
 </head>
@@ -919,7 +946,15 @@
 </main>
     
 <footer>
-    &copy; 2011 - 2026 <a href="https://suriyaprakhash.com" style="color: inherit; text-decoration: underline;">SURIYA PRAKHASH DEENADAYALAN</a>.
+    <nav class="social-links" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/suriya-prakhash-deenadayalan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://medium.com/@suriyaprakhash" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/suriyaprakhash" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        <a href="https://github.com/suriyaprakhash" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+    </nav>
+    <p class="copyright">
+        &copy; 2011 - 2026 <a href="https://suriyaprakhash.com" style="color: inherit; text-decoration: underline;">SURIYA PRAKHASH DEENADAYALAN</a>.
+    </p>
 </footer>
 
 <script>
